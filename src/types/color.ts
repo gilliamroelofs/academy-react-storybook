@@ -1,0 +1,1 @@
+export type Color = 'viridian' | 'cannon' | 'meadow' | 'denim' | 'lemon' | 'cerise'

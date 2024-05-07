@@ -1,0 +1,100 @@
+@use './reset/normalize' as reset;
+@use './typography/normalize' as typography;
+
+// CSS Vars
+:root {
+
+  --color-silver-100: #f0f0f0;
+  --color-silver-200: #e3e3e3;
+  --color-silver-300: #d1d1d1;
+  --color-silver-400: #bfbfbf;
+  --color-silver-500: #aaaaaa;
+  --color-silver-600: #969696;
+  --color-silver-700: #818181;
+  --color-silver-800: #6a6a6a;
+  --color-silver-900: #585858;
+
+  --color-viridian-100: #DFF9E2;
+  --color-viridian-200: #C1F3CB;
+  --color-viridian-300: #98DDAD;
+  --color-viridian-400: #72BC90;
+  --color-viridian-500: #45906B;
+  --color-viridian-600: #327B5E;
+  --color-viridian-700: #226753;
+  --color-viridian-800: #165347;
+  --color-viridian-900: #0D453F;
+
+  --color-cannon-100: #F9DFE1;
+  --color-cannon-200: #F3C1CA;
+  --color-cannon-300: #DD98AC;
+  --color-cannon-400: #BC728F;
+  --color-cannon-500: #90456A;
+  --color-cannon-600: #7B325D;
+  --color-cannon-700: #672252;
+  --color-cannon-800: #531646;
+  --color-cannon-900: #450D3F;
+
+  --color-meadow-100: #CEFBD3;
+  --color-meadow-200: #A0F8B1;
+  --color-meadow-300: #6DEB93;
+  --color-meadow-400: #48D881;
+  --color-meadow-500: #15BF6A;
+  --color-meadow-600: #0FA468;
+  --color-meadow-700: #0A8963;
+  --color-meadow-800: #066E59;
+  --color-meadow-900: #045B52;
+
+  --color-denim-100: #D0ECFD;
+  --color-denim-200: #A2D5FC;
+  --color-denim-300: #73B8F8;
+  --color-denim-400: #4F9DF1;
+  --color-denim-500: #1973E8;
+  --color-denim-600: #1259C7;
+  --color-denim-700: #0C42A7;
+  --color-denim-800: #072E86;
+  --color-denim-900: #04206F;
+
+  --color-lemon-100: #FFFBCF;
+  --color-lemon-200: #FFF79F;
+  --color-lemon-300: #FFF16F;
+  --color-lemon-400: #FFEC4B;
+  --color-lemon-500: #FFE30F;
+  --color-lemon-600: #DBC00A;
+  --color-lemon-700: #B79E07;
+  --color-lemon-800: #937D04;
+  --color-lemon-900: #7A6602;
+
+  --color-cerise-100: #FDDCD6;
+  --color-cerise-200: #FBB3AD;
+  --color-cerise-300: #F48386;
+  --color-cerise-400: #E96272;
+  --color-cerise-500: #DB3257;
+  --color-cerise-600: #BC2454;
+  --color-cerise-700: #9D194F;
+  --color-cerise-800: #7F0F48;
+  --color-cerise-900: #690943;
+
+  --spacer-4: .25rem;
+  --spacer-8: .5rem;
+  --spacer-12: .75rem;
+  --spacer-16: 1rem;
+  --spacer-20: 1.25rem;
+  --spacer-24: 1.5rem;
+  --spacer-28: 1.75rem;
+  --spacer-32: 2rem;
+  --spacer-40: 2.5rem;
+  --spacer-48: 3rem;
+  --spacer-56: 3.5rem;
+  --spacer-64: 4rem;
+  --spacer-80: 5rem;
+  --spacer-96: 6rem;
+  --spacer-128: 8rem;
+
+  --border-radius-s: .25rem;
+  --border-radius-m: .5rem;
+  --border-radius-l: .75rem;
+  --border-radius-xl: 1rem;
+  --border-radius-xxl: 1.25rem;
+  --border-radius-round: 999px;
+
+}

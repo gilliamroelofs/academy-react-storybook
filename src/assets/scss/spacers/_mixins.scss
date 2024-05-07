@@ -1,0 +1,77 @@
+@use './variables';
+
+@mixin make-block-padding-utilities() {
+  @each $n, $value in variables.$block-spacing-map {
+    .p-#{$n} {
+      padding: $value;
+    }
+
+    .px-#{$n} {
+      padding-left: $value;
+      padding-right: $value;
+    }
+
+    .py-#{$n} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+
+    .pt-#{$n} {
+      padding-top: $value;
+    }
+
+    .pr-#{$n} {
+      padding-right: $value;
+    }
+
+    .pb-#{$n} {
+      padding-bottom: $value;
+    }
+
+    .pl-#{$n} {
+      padding-left: $value;
+    }
+  }
+}
+
+@mixin make-block-margin-utilities() {
+  @each $n, $value in variables.$block-spacing-map {
+    .m-#{$n} {
+      margin: $value;
+    }
+
+    .mx-#{$n} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+
+    .my-#{$n} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+
+    .mt-#{$n} {
+      margin-top: $value;
+    }
+
+    .mr-#{$n} {
+      margin-right: $value;
+    }
+
+    .mb-#{$n} {
+      margin-bottom: $value;
+    }
+
+    .ml-#{$n} {
+      margin-left: $value;
+    }
+  }
+}
+
+@mixin make-typography-margin-utilities() {
+  @each $n, $value in variables.$typography-spacing-map {
+    .mb-#{$n} {
+      margin-bottom: $value;
+    }
+  }
+}

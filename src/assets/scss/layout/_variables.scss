@@ -1,0 +1,14 @@
+// Breakpoint settings
+$breakpoint-xs: 0;
+$breakpoint-md: 744px;
+$breakpoint-lg: 980px;
+$breakpoint-xl: 1280px;
+
+// Viewport settings
+$viewport-xl: 1120px;
+$grid-breakpoints: (
+  xs: $breakpoint-xs,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+  xl: $breakpoint-xl
+);

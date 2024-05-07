@@ -1,0 +1,126 @@
+.button {
+  // reset
+  font-family: inherit;
+
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  position: relative;
+  padding: 0;
+
+  .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > .text {
+      min-width: 5rem;
+    }
+  }
+
+  &.small {
+    .text {
+      padding: var(--spacer-4);
+    }
+  }
+
+  &.medium {
+    .text {
+      padding: var(--spacer-8);
+    }
+  }
+
+  &.large {
+    .text {
+      padding: var(--spacer-12);
+    }
+  }
+
+
+  &.viridian {
+    background-color: var(--color-viridian-700);
+    color: var(--color-viridian-100);
+
+    &:not(:disabled, .disabled) {
+      &:hover,
+      &:focus {
+        background-color: var(--color-viridian-500);
+      }
+    }
+  }
+
+  &.cannon {
+    background-color: var(--color-cannon-700);
+    color: var(--color-cannon-100);
+
+    &:not(:disabled, .disabled) {
+      &:hover,
+      &:focus {
+        background-color: var(--color-cannon-500);
+      }
+    }
+  }
+
+  &.meadow {
+    background-color: var(--color-meadow-700);
+    color: var(--color-meadow-100);
+
+    &:not(:disabled, .disabled) {
+      &:hover,
+      &:focus {
+        background-color: var(--color-meadow-500);
+      }
+    }
+  }
+
+  &.denim {
+    background-color: var(--color-denim-700);
+    color: var(--color-denim-100);
+
+    &:not(:disabled, .disabled) {
+      &:hover,
+      &:focus {
+        background-color: var(--color-denim-500);
+      }
+    }
+  }
+
+  &.lemon {
+    background-color: var(--color-lemon-700);
+    color: var(--color-lemon-100);
+
+    &:not(:disabled, .disabled) {
+      &:hover,
+      &:focus {
+        background-color: var(--color-lemon-500);
+      }
+    }
+  }
+
+  &.cerise {
+    background-color: var(--color-cerise-700);
+    color: var(--color-cerise-100);
+
+    &:not(:disabled, .disabled) {
+      &:hover,
+      &:focus {
+        background-color: var(--color-cerise-500);
+      }
+    }
+  }
+
+  &:disabled,
+  &.disabled {
+    box-shadow: none;
+    border: none;
+    background-color: var(--color-silver-300);
+    color: var(--color-silver-500);
+    cursor: not-allowed;
+
+    // disable link
+    pointer-events: none;
+  }
+
+}

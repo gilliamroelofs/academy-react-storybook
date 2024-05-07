@@ -1,0 +1,14 @@
+.root {
+  > div {
+    background-color: var(--color-viridian-100);
+
+    > div {
+      display: grid;
+      place-content: center;
+      border-radius: 4px;
+      background-color: var(--color-viridian-300);
+      text-align: center;
+      padding: 1rem;
+    }
+  }
+}

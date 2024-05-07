@@ -1,0 +1,30 @@
+.card {
+  border: 1px solid rgb(0 0 0 / 15%);
+  border-radius: var(--border-radius-s);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  min-width: 275px;
+
+  > .content {
+    padding: var(--spacer-16);
+  }
+
+  > .media {
+    > img {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  > .header {
+
+  }
+
+  > .actions {
+    display: flex;
+    align-items: center;
+    padding: var(--spacer-8);
+  }
+}

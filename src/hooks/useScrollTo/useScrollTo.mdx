@@ -1,0 +1,31 @@
+import { Meta, Canvas } from "@storybook/blocks";
+
+import * as UseScrollToStories from "./useScrollTo.stories";
+
+<Meta of={UseScrollToStories} />
+
+## useScrollTo
+
+- [How it works](#how-it-works)
+- [Examples](#examples)
+
+### How it works
+
+A react hook to scroll an referenced element into view.
+
+```jsx
+const ref = useRef(null);
+const scrollTo = useScrollTo(ref);
+const handleAction = () => {
+  scrollTo();
+};
+```
+
+### Scroll margin
+
+If you need to scroll to an element and give it some more space, pass a ref and add `scrollMarginTop` spacer to manage offset.
+Example:
+
+### Examples
+
+<Canvas of={UseScrollToStories.Hook} />

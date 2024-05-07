@@ -1,0 +1,16 @@
+.root {
+  background-color: var(--color-viridian-100);
+
+  > * {
+    display: grid;
+    place-content: center;
+    border-radius: 4px;
+    background-color: var(--color-viridian-300);
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+.wrapDemo {
+  width: 40vw;
+}

@@ -1,0 +1,76 @@
+@use '../../../assets/scss/typography/mixins';
+
+.variant {
+  &-heading-4xl {
+    @include mixins.make-like-heading-4xl;
+  }
+  
+  &-heading-3xl {
+    @include mixins.make-like-heading-3xl;
+  }
+
+  &-heading-2xl {
+    @include mixins.make-like-heading-2xl;
+  }
+
+  &-heading-xl {
+    @include mixins.make-like-heading-xl;
+  }
+
+  &-heading-lg {
+    @include mixins.make-like-heading-lg;
+  }
+
+  &-heading-sm {
+    @include mixins.make-like-heading-sm;
+  }
+
+  &-text-xl {
+    @include mixins.make-like-text-xl;
+  }
+
+  &-text-lg {
+    @include mixins.make-like-text-lg;
+  }
+
+  &-text-base {
+    @include mixins.make-like-text-base;
+  }
+
+  &-text-sm {
+    @include mixins.make-like-text-sm;
+  }
+
+  &-text-xs {
+    @include mixins.make-like-text-xs;
+  }
+}
+
+.bold {
+  @include mixins.make-bold;
+}
+
+
+.viridian {
+  color: var(--color-viridian-500);
+}
+
+.cannon {
+  color: var(--color-cannon-500);
+}
+
+.meadow {
+  color: var(--color-meadow-500);
+}
+
+.denim {
+  color: var(--color-denim-500);
+}
+
+.lemon {
+  color: var(--color-lemon-500);
+}
+
+.cerise {
+  color: var(--color-cerise-500);
+}

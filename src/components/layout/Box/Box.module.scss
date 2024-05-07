@@ -1,0 +1,74 @@
+@use '../../../assets/scss/spacers/variables' as spacerVars;
+
+.box {
+  display: flex;
+}
+
+.b-f1 {
+  flex: 1 1 0%;
+}
+
+.b-auto {
+  flex: 1 1 auto;
+}
+
+.b-initial {
+  flex: 0 1 auto;
+}
+
+.b-none {
+  flex: none;
+}
+
+.b-grow {
+  flex-grow: 1;
+}
+
+.b-grow-0 {
+  flex-grow: 0;
+}
+
+.b-shrink {
+  flex-shrink: 1;
+}
+
+.b-shrink-0 {
+  flex-shrink: 0;
+}
+
+.b-row {
+  flex-direction: row;
+}
+
+.b-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.b-col {
+  flex-direction: column;
+}
+
+.b-col-reverse {
+  flex-direction: column-reverse;
+}
+
+.b-wrap {
+  flex-wrap: wrap;
+}
+
+.b-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.b-nowrap {
+  flex-wrap: nowrap;
+}
+
+@each $n, $value in spacerVars.$spacer-map {
+  .b-space-x-#{$n} {
+    column-gap: var(--spacer-#{$n});
+  }
+  .b-space-y-#{$n} {
+    row-gap: var(--spacer-#{$n});
+  }
+}
